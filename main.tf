@@ -1,3 +1,7 @@
+provider "azurerm" {
+  features {}
+}
+
 resource "azurerm_resource_group" "rg" {
   name     = var.rg
   location = var.region
@@ -10,5 +14,4 @@ resource "azurerm_resource_group" "rg" {
     ConsumerOrganization2 = var.consumer_org2_tag
     SupportStatus         = var.support_stat_tag  
   }
-
 }
